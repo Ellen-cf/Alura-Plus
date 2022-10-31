@@ -1,0 +1,145 @@
+Acabamos de inserir duas imagens de maneira distinta no nosso código. A imagem do Combo+ foi implementada no arquivo index.html dessa maneira:
+
+<img src=”img/Combo.png” alt=”O combo+ é a junção do alura+ e o alura lingua”>
+
+Já a imagem de fundo, que apresenta vários instrutores da Alura, foi implementada no arquivo styles.css desse jeito:
+
+.principal {
+background-image: url(“img/Background.png”);
+}
+Por que a imagem dos instrutores e instrutoras não foi colocada dentro da tag de imagem, a <img>?
+
+Pois a imagem “Background.png” é decorativa e seu contexto não muda a leitura da página.
+
+
+Alternativa correta! É isso aí! Quando estamos inserindo uma imagem, é importante pensar: essa imagem faz parte do conteúdo da página?
+ Se não, é possível colocá-la como background-image() de algum elemento.
+
+Quando começamos um arquivo HTML, há uma estrutura padrão que é usada em qualquer projeto do tipo, que foi apresentada no vídeo anterior. 
+É importante saber quais são as tags que precisam ser implementadas e entender seus papéis dentro do código.
+
+Você pode aprender mais sobre essas tags que fazem parte da base de um arquivo HTML com o artigo 
+“O que é o HTML e suas tags? Parte 1: estrutura básica”, feito pela instrutora Beatriz Moura em parceria com o instrutor Matheus Henrique.
+
+Ao fazer as alterações no projeto, era necessário recarregar a página ou abrir o arquivo para conseguir visualizar o que foi criado.
+ Assim, a extensão Live Server auxilia nisso. 
+ Você pode conhecer mais sobre ela e outras extensões no artigo Extensões VS Code: descubra quais são as mais usadas, também da instrutora Beatriz Moura.
+ https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica
+ https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-2-elementos-inline?utm_source=gnarus&utm_medium=timeline
+
+ 
+ --------------------------------------------------------------------------------------------------------------------------------------
+
+ na parte do botao assine ja
+ Vamos no “styles.css” de novo no container. Vamos colocar, grid-template-columns: 50% 50%;. Vamos ver como ficou. Agora ficou ocupando só o espaço dele ali. 
+ Isso aconteceu porque o grid vai separando os elementos da tela, um do lado do outro ou um embaixo do outro. 
+ Ele estava por linha assim por padrão por isso estava fazendo um por baixo do outro, 
+ separando para não ocupar tanto espaço da tela.
+
+ Não seja levado pelas aparências: os elementos <a> e <button> podem ser exatamente iguais aos nossos olhos, pois basta que sejam estilizados apropriadamente.
+Porém, por trás, não são iguais. Eles possuem significados diferentes, e cabe à pessoa desenvolvedora compreender o contexto para escolher qual utilizar.
+
+O elemento que deverá ser usado é o <button> por executar uma função ao ser clicado: apagar os dados do formulário.
+
+
+Alternativa correta! Isso mesmo! Quando queremos que um evento aconteça a partir do clique do mouse, utilizamos os botões.
+
+alternativa errada:
+O elemento que deverá ser usado é o <a> por executar uma função ao ser clicado: apagar os dados do formulário.
+O elemento <a> semanticamente não é utilizado com esse intuito.
+
+
+o que aprendemos nessa aula
+Criar botões na página e como escolher qual elemento para isso;
+Como nomear classes com o padrão BEM (block element modifier);
+A diferença entre <button> e <a>;
+Unidade de medida responsiva em;
+Display inline e block;
+Usar as propriedades CSS grid e grid-template-columns para dividir a tela;
+Conferir através da ferramenta do desenvolvedor no navegador (F12) os grids na tela;
+Detectar diferentes tipos de fontes e tamanhos de letras no Figma;
+Escolher fontes no fonts.google.com;
+Importar fontes externas no arquivo HTML;
+Usar variáveis CSS para armazenar valores além de cores como o nome da fonte;
+Aplicar a fonte importada nos elementos através do CSS e outros atributos relacionados: font-family, font-size, font-weight;
+Remover a decoração do texto de links através do text-decoration.
+------------------------------------------------------------------------------------------------------
+
+Então nessa atividade inteira vimos três maneiras de colocar margem. A margem com os quatro valores que é do sentido horário e a margem bottom que também existe left, right, top. 
+E essa é maneira de construir com dois valores quando queremos abranger cima e abaixo ou direita e esquerda.
+No vídeo anterior, foi demonstrado o uso de margins e as comparações dele com o padding. Das afirmações abaixo, quais são corretas?
+
+I. Margins criam um espaçamento ao redor do elemento.
+
+II. Paddings criam um espaçamento dentro do elemento.
+
+III. Paddings afastam um elemento do outro.
+IV. É possível configurar valores de margins diferentes para cada lado.
+Somente I, II e IV.
+
+
+Alternativa correta! Margins realmente criam espaço ao redor do elemento e paddings criam dentro dele, ou seja, o padding afasta o conteúdo da borda e não um elemento do outro. 
+Por fim, também podemos configurar valores diferentes para cada lado do elemento e, no vídeo, vimos diversas maneiras de fazer isso.,Isso aconteceu porque o align items
+em português significa alinhar item quando ele está no grid e que só definimos coluna, não definimos linha, ele vai alinhar ao centro dessa coluna.,
+Cliquei no "Ctrl + Shift + C" que abre o seletor como se fosse um mouse e passei aqui. Ele tem aquele traçado no meio para mostrar as duas colunas
+e dá para notar que todo aquele conteúdo está bem no meio dessa coluna e consequentemente ele fica no meio da página. 
+Mas não é só isso que precisamos fazer, precisamos alinhar todo esse texto no centro também.
+
+Então vou novamente no “styles.css” e continuar onde estávamos que é na classe principal. Embaixo do align-items vou colocar, text-align: center;.
+Salvei e voltei para o navegador e agora todo o texto está alinhado, mas também a imagem. Por que isso? Porque o text align,
+mesmo que a tradução dele seja alinhamento de texto, não é assim que ele funciona não.
+Ele funciona alinhando ao centro tudo o que está dentro de um elemento de bloco. Ou seja, aquela section que criamos para a primeira seção, 
+por padrão ele veio com o display: block. Então esse text align alinhou tudo o que tem ali dentro, inclusive, a imagem. Então já temos essa primeira seção totalmente completa visualmente.
+ Vamos dar sequência nesse projeto. Vamos continuar e criar as outras seções. Te vejo no próximo vídeo para fazermos isso.
+
+ Tendo isso pronto, qual propriedade CSS a seguir você usaria para alinhar ao centro todos os itens deste container e por quê?
+
+Alternativa correta
+text-align, porque ele consegue alinhar todos elementos inline dentro do bloco.
+
+
+Alternativa correta! O código começa com um elemento de bloco (a div), ou seja, que tem display block, e há elementos dentro dele que são inline.
+ Dessa maneira, usar a propriedade text-align na div permitirá alinhar para qualquer lado que você desejar os elementos filhos da div.
+
+ 
+ Nessa aula, você aprendeu:
+Afastar elementos dos cantos da tela e de outros elementos;
+A diferença entre margin e padding;
+Diversas maneiras de determinar os valores e as direções das margens dentro da propriedade margin;
+Construir uma nova section;
+Reutilizar estilos através das classes dentro da nova section;
+Atribuir mais de uma classe nos elementos para incluir novas estilizações além das existentes.
+
+Como funciona o display: inline; ?
+O valor inline permite que os elementos fiquem um do lado do outro -- essa é a parte simples de perceber.
+
+Nós temos definido uma largura e uma altura para todas as <li> em nosso código, mas as propriedades width e height não funcionaram. 
+Esse também é um comportamento do inline. Os elementos com inline não aceitam largura (width), nem altura (height), o tamanho do elemento é definido pelo conteúdo que ele contém.
+
+o display block permite que um elemento ocupe totalmente uma linha na pagina, as tagss de lista li sao blocks automaticos, e display block pode 
+colocar widht e height
+
+como funciona a propriedade display: inline-block . O próprio nome in-block ) já mostra para nós que é um bloco dos padrões + valores inline .
+ Abaixo explicarei detalhadamente o comportamento dessa.
+ com display: inline bloc nós define um largura (width) e altura (height) da mesma forma que foi feito com display: block, 
+ esse é o único comportamento que o  inline-bloc herda fazerquadra.
+ Também inline deixar um elemento do lado do outro, vulgo mesma, da mesma forma que fazemos com o display: inline ,
+  mas esse não é o único comportamento que o inline-block herda do inline .,Quando um elemento é definido como display: inline-block ele também ganha o comportamento de uma palavra, 
+  esse é o segundo comportamento que herdamos do display: inline .
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Uma pseudo-classe CSS é uma propriedade que é adicionada ao final dos seletores que especifica o estado que esse elemento está. 
+Ele detecta, por exemplo, se o elemento está com um mouse em cima dele, construindo uma experiência interativa com o usuário. Aqui, você pode conferir uma lista de pseudo-classes para testar no seu projeto:
+
+:focus: é aplicada quando um elemento está em foco, pode ser pelo clique do mouse ou seleção pelo teclado. Um exemplo é quando os campos de escrita em formulários estão selecionados para o usuário escrever.
+
+:hover: detecta quando um usuário está com o mouse em cima do elemento, sem necessariamente estar clicando.
+
+:active: detecta quando o elemento está ativo, quando há uma interação, por exemplo: o link <a> está sendo clicado.
+
+:visited: detecta quando o link <a> já foi visitado, ou seja, se você já clicou anteriormente naquele link.
+
+:link: detecta quando é um link <a> que nunca foi clicado antes.
