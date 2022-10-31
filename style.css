@@ -61,6 +61,9 @@ body{
     color: var(--branco-principal);
 }
 
+.botao__combomais{
+    width: 21%;
+}
 
 .container__aviso{
     font-size: 12px;
